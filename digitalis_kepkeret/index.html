@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Digitális képkeret</title>
   </head>
   <body>
+    <label for="url">Kép URL címe: </label><input type="url" id="url" value=""><br>
+   <label for="image_width"> Kép szélessége: </label><input type="number" id="image_width"><br>
+   <label for="border_width"> Képkeret vastagsága:</label> <input type="number" id="border_width"><br>
+    <label for="color"> Képkeret színe: </label><input type="color" id="color"><br>
+    <img src="public/cat_img.jpeg" alt="kép" id="image">
     <div id="app"></div>
+    <footer>Kormos Áron 14/s <input type="button" id="themechange" value="Sötét/világos"></footer>
     <script type="module" src="/main.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
